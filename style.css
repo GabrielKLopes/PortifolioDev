@@ -1,0 +1,412 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+/* inicio */
+.main {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(./found.jpg);
+}
+
+.gl-logo {
+  font-size: 30px;
+  margin-left: 20px;
+  font-family: "Roboto";
+}
+
+.nav-link {
+  color: #57ffdc;
+  font-size: 30px;
+  font-family: "Roboto";
+}
+
+.nav-link:hover{
+  color: #57ffdc;
+  border-bottom: 1px solid #57ffdc;
+  transition: color 0.5s ease, border-bottom 0.5s ease;
+}
+
+.navbar-toggler {
+  background-color: transparent;
+  border: none;
+}
+
+.navbar-toggler-icon {
+  color: rgb(0, 0, 0);
+}
+
+.navbar-collapse {
+  background-color: transparent;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.container-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  height: 78vh;
+}
+.container-1 h1 {
+  color: #57ffdc;
+  font-family: "Roboto";
+}
+.about {
+  background-color: #141414;
+  padding: 50px 0;
+}
+
+.about-main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.about-text {
+  flex: 1;
+  text-align: justify;
+  font-size: 20px;
+  font-family: "Roboto";
+  color: #57ffdc;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 100%;
+  height: auto;
+  
+}
+
+.skills{
+  background-color: #141414;
+  padding: 50px 0;
+}
+
+.skills-main {
+  display: flex;
+ justify-content: space-between;
+ align-items: center;
+ flex-direction: row;
+ gap: 15px;
+ flex-wrap: wrap;
+}
+
+.img-content {
+  max-width: 100px;
+}
+
+.skills-fluid h1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #ffff;
+  font-family: "Roboto";
+}
+
+.about-text {
+  flex: 1;
+  text-align: justify;
+}
+
+.about-text p {
+  margin-bottom: 1em;
+  
+}
+.text{
+  font-family: "Roboto";
+  color: #ffff;
+}
+
+.projects{
+  background-image: url(./about.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+}
+
+.card-deck {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.card-body{
+  background-color: #292929;
+}
+.card-title{
+  color: #ffff;
+}
+.projects-title{
+  font-family: "Roboto";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffff;
+}
+.contacts{
+  padding: 50px 0;
+  background-color: #141414;
+}
+.contact-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 105px;
+}
+.contact-img{
+  max-width: 100px;
+}
+.contact-info a {
+  text-decoration: none;
+  color: #ffff;
+  font-family: 'Roboto';
+}
+.contact-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffff;
+  font-family: 'Roboto';
+}
+
+footer {
+  background-color: #000000;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.container-main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-main p {
+  font-size: 14px;
+  color: #777;
+}
+
+.card-center {
+  display: flex;
+  justify-content: center;
+}
+
+/* Media Queries */
+
+@media (max-width: 350px) {
+  .container-1 {
+    margin-top: 10px;
+  }
+
+  .container-1 > h1 {
+    font-size: 25px;
+  }
+  .about-main {
+    flex-direction: column;
+  }
+
+  .about-text {
+    order: 2;
+  }
+
+  .about-image {
+    order: 1;
+    align-self: center;
+  }
+  .contact-info {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .contact-img {
+    max-width: 80px;
+  }
+  .card-deck {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .card-center {
+    display: flex;
+    justify-content: center;
+  }
+  .row.justify-content-center-sm {
+    justify-content: center ;
+  }
+}
+
+@media (min-width: 351px) and (max-width: 576px) {
+  .container-1 {
+    margin-top: 15px;
+  }
+
+  .container-1 > h1 {
+    font-size: 30px;
+  }
+  .about-main {
+    flex-direction: column;
+  }
+
+  .about-text {
+    order: 2;
+  }
+
+  .about-image {
+    order: 1;
+    align-self: center;
+  }
+  .contact-info {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .contact-img {
+    max-width: 80px;
+  }
+  .card-deck {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .card-center {
+    display: flex;
+    justify-content: center;
+  }
+  .row.justify-content-center-sm {
+    justify-content: center ;
+  }
+  
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+  .container-1 {
+    margin-top: 20px;
+  }
+
+  .container-1 > h1 {
+    font-size: 35px;
+  }
+  .about-main {
+    flex-direction: column;
+  }
+
+  .about-text {
+    order: 2;
+  }
+
+  .about-image {
+    order: 1;
+    align-self: center;
+  }
+  .card-deck {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .card-center {
+    display: flex;
+    justify-content: center;
+  }
+  .row.justify-content-center-sm {
+    justify-content: center ;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container-1 {
+    margin-top: 25px;
+  }
+
+  .container-1 > h1 {
+    font-size: 40px;
+  }
+
+  .about-main {
+    flex-direction: column;
+  }
+
+  .about-text {
+    order: 2;
+  }
+
+  .about-image {
+    order: 1;
+    align-self: center;
+  }
+  .card-deck {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .card-center {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container-1 {
+    margin-top: 30px;
+  }
+
+  .container-1 > h1 {
+    font-size: 45px;
+  }
+  .card-deck {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .card-center {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-1 {
+    margin-top: 35px;
+  }
+
+  .container-1 > h1 {
+    font-size: 50px;
+  }
+  .card-deck {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .card-center {
+    display: flex;
+    justify-content: center;
+  }
+}
